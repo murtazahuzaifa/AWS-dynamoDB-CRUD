@@ -1,0 +1,11 @@
+{
+  "name": "AWS-dynamoDB-CRUD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "murtazahuzaifa <murtaza.huzaifa2@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.796.0"
+  }
+}
