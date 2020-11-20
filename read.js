@@ -33,12 +33,13 @@ const fetchOneByKey = () => {
 
 // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#scan-property
 const fetchAllData = () => {
-
-    documentClient.scan({
-        TableName: 'products'
-    }, (err, data) => {
-        if (err) console.log(err);
-        else console.log(JSON.stringify(data, null, 2));
-    });
+    documentClient.scan(
+        {
+            TableName: 'products'
+        },
+        (err, data) => {
+            if (err) console.log(err);
+            else console.log(JSON.stringify(data, null, 2));
+        });
 }
 fetchAllData();
