@@ -25,9 +25,9 @@ const save = () => {
     documentClient.put(params, function (err, data) {
 
         if (err) {
-            console.log("users::save::error - " + JSON.stringify(err, null, 2));
+            console.log("product::save::error - " + JSON.stringify(err, null, 2));
         } else {
-            console.log("users::save::success", JSON.stringify(data, null, 2));
+            console.log("product::save::success", JSON.stringify(data, null, 2));
         }
     });
 }
@@ -48,9 +48,9 @@ const writeMultipleItems = () => {
 
     }, (err, data) => {
         if (err) {
-            console.log("users::save::error - " + JSON.stringify(err, null, 2));
+            console.log("products::save::error - " + JSON.stringify(err, null, 2));
         } else {
-            console.log("users::save::success", JSON.stringify(data, null, 2));
+            console.log("products::save::success", JSON.stringify(data, null, 2));
         }
     });
 }
